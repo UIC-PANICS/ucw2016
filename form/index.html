@@ -3,9 +3,20 @@
 <head>
 <meta charset="utf-8">
     <title>第八届UIC电竞大赛在线报名通道|UIC-PANICS</title>
-    <!--<link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!--  <link rel="stylesheet" type="text/css" href="css/style.css">-->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scaleable=no"/>
-    <style type="text/css">
+    <script>
+        function showdiv(){
+            var element=document.getElementById("headbar").style;
+            if (element.height=="160px"){
+                element.height="40px";
+            }
+            else{
+                element.height="160px";
+            }
+        }
+    </script>
+    <style>
         body{
             font-family:'PT Sans','Trebuchet MS',"PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", Tahoma,sans-serif;
             padding:0px;
@@ -20,12 +31,14 @@
             color:#999;
             font-size:14px;
             line-height:1;
-            padding:0 5%;
+            padding:0;
             overflow:hidden;
             -moz-box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);
             -webkit-box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);
-            box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);height:40px;
-            }
+            box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);
+            height:40px;
+            transition: 0.3s;
+        }
         #headbar a{
             color:#ccc;
             text-decoration:none;
@@ -34,52 +47,52 @@
             -webkit-border-radius:5px;
             border-radius:5px;
             display:inline-block;
-            }
+        }
         #headbar a:hover{
             background-color:#000;
             color:#fff;
-            }
+        }
         #headbar h1{
             float:left;
             font-size:14px;
             font-weight:400;
             line-height:1;
             position:relative;
-            left:-8px;
-            padding:6px 0;
+            padding:6px 5%;
             letter-spacing:0.08em;
             margin:0;
-            }
+        }
         #headbar h1 a{
             color:#fff;
-            }
+        }
         #headbar h1 span{
             color:#999;
             letter-spacing:normal;
             padding:0;
-            }
+        }
         #headbar h1 a:hover span{
             color:#fff;
-            }
+        }
         #headbar ul{
             float:right;
             list-style:none;
             position:relative;
-            right:-8px;margin:0;
-            }
+            margin:0;
+            padding-right: 5%;
+        }
         #headbar li{
             float:left;
             display:block;
             margin-left:1em;
             padding:6px 0;
-            }
+        }
         #headbar a,#headbar a span{
             -moz-transition:background-color 0.1s ease-out;
             -webkit-transition:background-color 0.1s ease-out;
             -ms-transition:background-color 0.1s ease-out;
             -o-transition:background-color 0.1s ease-out;
             transition:background-color 0.1s ease-out;
-            }
+        }
         #header{
             padding: 0px;
             margin: 0px;
@@ -127,10 +140,58 @@
             text-decoration:none;
         }
         @media(max-width: 767px){
-        #article{
-        margin-left: 0;
-        margin-right:0;
+            #article{
+                margin-left: 0;
+                margin-right:0;
+            }
         }
+
+        @media(max-width: 767px){
+            #headbar{
+                height: 40px;
+                position: absolute;
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+        @media(max-width: 767px){
+            #headbar ul{
+                float: none;
+                margin-top: 40px;
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        @media(max-width: 767px){
+            #headbar li{
+                float: none;
+            }
+        }
+
+        @media(max-width: 767px){
+            #headbar h1{
+                padding-left: 5%;
+            }
+        }
+
+        @media(max-width: 767px){
+            #header{
+                padding-top: 40px;
+            }
+        }
+
+        .imgclass{
+            float: right;
+            height: 40px;
+            padding-right: 2%;
+        }
+
+        @media (min-width: 768px) {
+            .imgclass{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -140,6 +201,7 @@
             <h1>
                 <a href="http://uiccst.com" title="UICCST">电竞大赛在线报名通道 <span>V8.0</span></a>
             </h1>
+            <img src="css/menu.png" class="imgclass" onclick="showdiv()" alt="">
             <ul>
                 <li>
                     <a href="http://uic.edu.hk/" title="UIC">UIC Homepage</a>

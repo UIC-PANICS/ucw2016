@@ -1,10 +1,3 @@
-/*
-UIC PANICS Frame 3.0
-2017.02.02
-For UICcst CGC Register Page
-*/
-
-/*Global Style*/
 body{
     font-family:'PT Sans','Trebuchet MS',"PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", Tahoma,sans-serif;
     padding:0px;
@@ -12,8 +5,6 @@ body{
     margin:0px;
     background-color: #FFF;
 }
-
-/*Headbar Style*/
 #headbar{
     background-color:#222;
     background-color:rgba(30,30,30,0.95);
@@ -21,13 +12,14 @@ body{
     color:#999;
     font-size:14px;
     line-height:1;
-    padding:0 5%;
+    padding:0;
     overflow:hidden;
     -moz-box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);
     -webkit-box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);
-    box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);height:40px;
-    }
-/*headbar fonts position*/
+    box-shadow:inset 0 -1px 0 rgba(100,100,100,0.2);
+    height:40px;
+    transition: 0.3s;
+}
 #headbar a{
     color:#ccc;
     text-decoration:none;
@@ -36,94 +28,73 @@ body{
     -webkit-border-radius:5px;
     border-radius:5px;
     display:inline-block;
-    }
+}
 #headbar a:hover{
     background-color:#000;
     color:#fff;
-    }
-/*Heading fonts size*/
+}
 #headbar h1{
     float:left;
     font-size:14px;
     font-weight:400;
     line-height:1;
     position:relative;
-    left:-8px;
-    padding:6px 0;
+    padding:6px 5%;
     letter-spacing:0.08em;
     margin:0;
-    }
-
+}
 #headbar h1 a{
     color:#fff;
-    }
-
+}
 #headbar h1 span{
     color:#999;
     letter-spacing:normal;
     padding:0;
-    }
-
+}
 #headbar h1 a:hover span{
     color:#fff;
-    }
-
-/*ul&li link style*/
+}
 #headbar ul{
     float:right;
     list-style:none;
     position:relative;
-    right:-8px;margin:0;
-    }
+    margin:0;
+    padding-right: 5%;
+}
 #headbar li{
     float:left;
     display:block;
     margin-left:1em;
     padding:6px 0;
-    }
-
-/*a tag style*/
+}
 #headbar a,#headbar a span{
     -moz-transition:background-color 0.1s ease-out;
     -webkit-transition:background-color 0.1s ease-out;
     -ms-transition:background-color 0.1s ease-out;
     -o-transition:background-color 0.1s ease-out;
     transition:background-color 0.1s ease-out;
-    }
-
-/*Header Style*/
+}
 #header{
     padding: 0px;
     margin: 0px;
     border: 0px;
     background-repeat: no-repeat;
 }
-
-
 #header .heading{
     position: absolute;
     z-index: 2;
     left: 200px;
     top: 400px;
 }
-
-
-/*Nav Bar*/
 .mainbody{
     margin: 0px;
     padding:10px;
     border: 0px;
     background-color: #FFF;
 }
-
 #article{
     margin: 0% 20% 0% 20%;
 }
-
-
-
-/*Footer Style*/
-
 #footer .container{
     min-height:1px;
     padding-top: 0px;
@@ -132,19 +103,15 @@ body{
     background-color:#333;
     z-index: 2;
 }
-
 #footer .blank{
     min-height:30px;
     background-color:#333;
 }
-
-
 #footer .footercopyright{
     color:#999999;
     font-size:18px;
     border: 15px;
 }
-
 a {
     color: #999999;
     text-decoration:none;
@@ -153,11 +120,57 @@ a:hover {
     color:#595959;
     text-decoration:none;
 }
+@media(max-width: 767px){
+    #article{
+        margin-left: 0;
+        margin-right:0;
+    }
+}
 
 @media(max-width: 767px){
-#article{
-margin-left: 0;
-margin-right:0;
+   #headbar{
+       height: 40px;
+       position: absolute;
+       width: 100%;
+       padding-left: 0;
 }
 }
-/*当设备宽度小于767px时，取消左右的margin*/
+@media(max-width: 767px){
+   #headbar ul{
+       float: none;
+       margin-top: 40px;
+       text-align: center;
+       padding-left: 0;
+       padding-right: 0;
+   }
+}
+
+@media(max-width: 767px){
+   #headbar li{
+       float: none;
+   }
+}
+
+@media(max-width: 767px){
+    #headbar h1{
+        padding-left: 5%;
+    }
+}
+
+@media(max-width: 767px){
+    #header{
+        padding-top: 40px;
+    }
+}
+
+.imgclass{
+    float: right;
+    height: 40px;
+    padding-right: 2%;
+}
+
+@media (min-width: 768px) {
+    .imgclass{
+        display: none;
+    }
+}
