@@ -8,11 +8,11 @@
     <script>
         function showdiv(){
             var element=document.getElementById("headbar").style;
-            if (element.height=="160px"){
-                element.height="40px";
+            if (element.height=="180px"){
+                element.height="60px";
             }
             else{
-                element.height="160px";
+                element.height="180px";
             }
         }
     </script>
@@ -148,8 +148,8 @@
 
         @media(max-width: 767px){
             #headbar{
-                height: 40px;
-                position: absolute;
+                height: 60px;
+                position: fixed;
                 width: 100%;
                 padding-left: 0;
             }
@@ -157,7 +157,7 @@
         @media(max-width: 767px){
             #headbar ul{
                 float: none;
-                margin-top: 40px;
+                margin-top: 60px;
                 text-align: center;
                 padding-left: 0;
                 padding-right: 0;
@@ -173,19 +173,22 @@
         @media(max-width: 767px){
             #headbar h1{
                 padding-left: 5%;
+                padding-top: 16px;
+                font-size: 17px;
             }
         }
 
         @media(max-width: 767px){
             #header{
-                padding-top: 40px;
+                padding-top: 60px;
             }
         }
 
         .imgclass{
             float: right;
-            height: 40px;
+            height: 50px;
             padding-right: 2%;
+            padding-top: 5px;
         }
 
         @media (min-width: 768px) {
