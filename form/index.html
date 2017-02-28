@@ -6,13 +6,13 @@
   <!--  <link rel="stylesheet" type="text/css" href="css/style.css">-->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <script>
-        function showdiv(){
-            var element=document.getElementById("headbar").style;
-            if (element.height=="180px"){
-                element.height="60px";
+        function showdiv() {
+            var element = document.getElementById("headbar").style;
+            if (element.height == "180px") {
+                element.height = "60px";
             }
-            else{
-                element.height="180px";
+            else {
+                element.height = "180px";
             }
         }
     </script>
@@ -196,13 +196,32 @@
                 display: none;
             }
         }
+        .link{
+            width: 40%;
+            margin-left: 30%;
+            border-radius: 10px;
+            font-size: 25px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: orange;
+            margin-bottom: 40px;
+            border: 1px solid orange;
+            color: white;
+        }
+        @media(max-width: 767px){
+            .link{
+                width: 80%;
+                margin-left: 10%;
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
     <body>
 <!-- Top Headbar -->
         <div id="headbar">
             <h1>
-                <a href="http://uiccst.com" title="UICCST">电竞大赛在线报名通道 <span>V8.0</span></a>
+                <a href="https://www.wenjuan.net/s/ZNzIvme/" title="UICCST">电竞大赛在线报名通道 <span>V8.0</span></a>
             </h1>
             <img src="css/menu.png" class="imgclass" onclick="showdiv()" alt="">
             <ul>
@@ -227,6 +246,7 @@
               <script type="text/javascript" src="https://www.wenjuan.net/iframe/5871bdab3fcf578b4278277a/"></script>
             </div>
         </div>
+<button class="link" onclick="window.location.href='https://www.wenjuan.net/s/ZNzIvme/'">如果点击下一页无法正常显示，请点击此处</button>
 <!-- Footer -->
         <footer id="footer">
             <div class="container">
