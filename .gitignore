@@ -3,6 +3,7 @@
 ehthumbs.db
 php/*
 phpMyAdmin/*
+cybergame/*
 *.exe
 .DS_Store
 # Folder config file
