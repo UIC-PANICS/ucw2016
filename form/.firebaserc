@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 {
   "projects": {
     "default": "cybergame-register"
   }
 }
+=======
+{
+  "projects": {
+    "default": "cybergame-register"
+  }
+}
+>>>>>>> 56ca378d6c7938411b72400ed7c08d6554744cb9

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scaleable=no"/>
+	<title>Platform and UserAgent</title>
+	<script src="device.js"></script>
+	<style type="text/css">
+		#mainframe{
+			width: 60%;
+			margin-left: 20%;
+		}
+		th{
+			background-color: #99c;
+		}
+		td{
+			background-color: #ccf;
+		}
+		.right{
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+<div id="mainframe">
+<table>
+	<tr><th colspan="2">System and Platform</th></tr>
+
+	<tr><td><b>Mobile</b></td><td class="right"><script type="text/javascript">
+		document.write(isMobile());
+	</script></td></tr>
+
+	<tr><td><b>iOS</b></td><td class="right"><script type="text/javascript">
+		document.write(isiOS());
+	</script></td></tr>
+
+	<tr><td><b>Android</b></td><td class="right"><script type="text/javascript">
+		document.write(isAndroid());
+	</script></td></tr>
+
+	<tr><td><b>PC</b></td><td class="right"><script type="text/javascript">
+		document.write(isPC());
+	</script></td></tr>
+
+	<tr><td><b>Windows</b></td><td class="right"><script type="text/javascript">
+		document.write(isWindows());
+	</script></td></tr>
+
+	<tr><td><b>Mac</b></td><td class="right"><script type="text/javascript">
+		document.write(isMac());
+	</script></td></tr>
+
+	<tr><td><b>Linux</b></td><td class="right"><script type="text/javascript">
+		document.write(isLinux());
+	</script></td></tr>
+
+	<tr><td><b>UserAgent</b></td><td class="right"><script type="text/javascript">
+		document.write(info());
+	</script></td></tr>
+	<script type="text/javascript">
+		if(isiPad()==true || isAndroidPad()==true){
+			var element=document.getElementById("mainframe");
+			element.style.marginLeft="10%";
+			element.style.width="80%";
+		}
+		else if(isMobile()==true){
+			var element=document.getElementById("mainframe");
+			element.style.marginLeft="0";
+			element.style.width="100%";
+		}
+		console.log(isiPad());
+	</script>
+</table>
+</div>
+</body>
+</html>
