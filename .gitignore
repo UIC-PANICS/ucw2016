@@ -2,6 +2,7 @@
 # Thumbs.db
 ehthumbs.db
 php/*
+phpMyAdmin/*
 *.exe
 .DS_Store
 # Folder config file
